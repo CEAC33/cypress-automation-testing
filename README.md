@@ -108,3 +108,9 @@ npm init
 ```
 npm install cypress --save-dev
 ```
+
+## Cypress Test Runner & Command Line Features
+
+```
+node_modules\.bin\cypress open
+```
