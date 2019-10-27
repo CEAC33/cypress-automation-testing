@@ -197,3 +197,15 @@ Running all tests from the terminal opening the browser in Chrome:
 ```
 ./node_modules/.bin/cypress run --headed --browser chrome
 ```
+
+### Exploring the Cypress Project Framework Structure
+
+- fixtures - this folder is responsible to store the test data
+- integration - test cases and examples
+- plugins - plugins are kind of listeners
+- support - write your customized commands, reusable methods
+- videos - videos of your tests
+- node_modules - created when you install cypress
+- cypress.json - configuration
+- package.json - when you run npm install, it will look for the dependencies in this file
+
