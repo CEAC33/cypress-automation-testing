@@ -114,3 +114,49 @@ npm install cypress --save-dev
 ```
 node_modules\.bin\cypress open
 ```
+
+## Build Cypress Basic test and run from Test Runner
+
+https://docs.cypress.io/guides/getting-started/writing-your-first-test.html
+
+> Delete all files inside `cypress/integration/examples` folder
+
+> Create a file `Test1.js` inside `cypress/integration/examples` folder
+
+```js
+describe('My First Test Suite', function() 
+{
+ 
+it('My FirstTest case', function() 
+{
+
+//test step
+
+})
+
+it('My Second case', function() 
+{
+
+//test step
+
+})
+
+})
+```
+
+Test1.js
+```js
+describe('My First Test Suite', function() 
+{
+ 
+it('My FirstTest case', function() 
+{
+
+cy.visit("https://www.bootcamps.online/")
+
+})
+
+})
+```
+
+Navigating to url - visit
