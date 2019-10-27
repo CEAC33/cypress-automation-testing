@@ -115,7 +115,7 @@ npm install cypress --save-dev
 node_modules\.bin\cypress open
 ```
 
-## Build Cypress Basic test and run from Test Runner
+### Build Cypress Basic test and run from Test Runner
 
 https://docs.cypress.io/guides/getting-started/writing-your-first-test.html
 
@@ -160,3 +160,40 @@ cy.visit("https://www.bootcamps.online/")
 ```
 
 Navigating to url - visit
+
+### Running Cypress Tests in supported browsers
+
+- Chrome
+- Electron
+- Canary
+- Chromium
+
+https://docs.cypress.io/guides/guides/command-line.html#Installation
+
+Running all tests from the terminal:
+
+```
+./node_modules/.bin/cypress run
+```
+
+Running specific spec from the terminal:
+
+```
+npx cypress run --spec "cypress/integration/my-spec.js"
+```
+
+If you run Cypress from command line, Cypress runs in headless and in Electron browser 
+
+Running all tests from the terminal opening the browser:
+
+```
+./node_modules/.bin/cypress run --headed
+```
+
+https://docs.cypress.io/guides/guides/launching-browsers.html
+
+Running all tests from the terminal opening the browser in Chrome:
+
+```
+./node_modules/.bin/cypress run --headed --browser chrome
+```
