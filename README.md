@@ -215,7 +215,6 @@ Running all tests from the terminal opening the browser in Chrome:
 
 Cypress supports CSS Selectors only
 
-```js
 - id - #idname - tagname#idname
 - classname - .classname - tagname.classname
 - attribute - tagname[attribute=value] 
@@ -229,6 +228,7 @@ Inside Cypress Editor > Open Selector Playground
 
 Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
 
+```js
 /// <reference types="Cypress" />
 
 describe('My First Test Suite', function() 
@@ -249,7 +249,6 @@ cy.get('.search-keyword').type('ca')
 
 https://docs.cypress.io/guides/references/assertions.html#Length
 
-```js
 - id - #idname - tagname#idname
 - classname - .classname - tagname.classname
 - attribute - tagname[attribute=value] 
@@ -263,6 +262,7 @@ Inside Cypress Editor > Open Selector Playground
 
 Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
 
+```js
 /// <reference types="Cypress" />
 
 describe('My First Test Suite', function() 
