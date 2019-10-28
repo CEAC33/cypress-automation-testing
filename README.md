@@ -209,3 +209,114 @@ Running all tests from the terminal opening the browser in Chrome:
 - cypress.json - configuration
 - package.json - when you run npm install, it will look for the dependencies in this file
 
+## Getting Started with Cypress Test Automation
+
+### Cypress locator strategies and how to construct them
+
+Cypress supports CSS Selectors only
+
+```js
+- id - #idname - tagname#idname
+- classname - .classname - tagname.classname
+- attribute - tagname[attribute=value] 
+- parent-child - form input
+
+ChroPath Extension - https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo?hl=en
+
+Inside Cypress Editor > Open Selector Playground
+
+### Cypress inbuilt plugin in testRunner to generate locators
+
+Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
+
+/// <reference types="Cypress" />
+
+describe('My First Test Suite', function() 
+{
+ 
+it('My FirstTest case', function() 
+{
+
+cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+cy.get('.search-keyword').type('ca')
+
+})
+
+})
+```
+
+### Basic Assertion in writing the tests with Cypress
+
+https://docs.cypress.io/guides/references/assertions.html#Length
+
+```js
+- id - #idname - tagname#idname
+- classname - .classname - tagname.classname
+- attribute - tagname[attribute=value] 
+- parent-child - form input
+
+ChroPath Extension - https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo?hl=en
+
+Inside Cypress Editor > Open Selector Playground
+
+### Cypress inbuilt plugin in testRunner to generate locators
+
+Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
+
+/// <reference types="Cypress" />
+
+describe('My First Test Suite', function() 
+{
+ 
+it('My FirstTest case', function() 
+{
+
+cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+cy.get('.search-keyword').type('ca')
+cy.wait(2000)
+cy.get('.product').should('have.length',4)
+
+})
+
+})
+```
+
+### Handling Invisible elements with Cypress by understanding logs
+
+```js
+- id - #idname - tagname#idname
+- classname - .classname - tagname.classname
+- attribute - tagname[attribute=value] 
+- parent-child - form input
+
+ChroPath Extension - https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo?hl=en
+
+Inside Cypress Editor > Open Selector Playground
+
+### Cypress inbuilt plugin in testRunner to generate locators
+
+Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
+
+/// <reference types="Cypress" />
+
+describe('My First Test Suite', function() 
+{
+ 
+it('My FirstTest case', function() 
+{
+
+cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+cy.get('.search-keyword').type('ca')
+cy.wait(2000)
+cy.get('.product:visible').should('have.length',4)
+
+})
+
+})
+```
+
+## Deep diving into Cypress Commands and its Asynchronous Nature
+
+### Understanding get and find commands with Cypress
+
+
