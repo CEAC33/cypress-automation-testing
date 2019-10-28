@@ -283,7 +283,7 @@ cy.get('.product').should('have.length',4)
 
 ### Handling Invisible elements with Cypress by understanding logs
 
-```js
+
 - id - #idname - tagname#idname
 - classname - .classname - tagname.classname
 - attribute - tagname[attribute=value] 
@@ -297,6 +297,7 @@ Inside Cypress Editor > Open Selector Playground
 
 Intelligent Code Completion - https://docs.cypress.io/guides/tooling/intelligent-code-completion.html
 
+```js
 /// <reference types="Cypress" />
 
 describe('My First Test Suite', function() 
